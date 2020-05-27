@@ -256,13 +256,24 @@ body {
   color: rgb(146, 145, 145);
 }
 .contact-form {
-  display: flex;
   width: 940px;
+  text-align: center;
   margin: 0 auto;
+}
+.contact-form-container {
+  display: flex;
   justify-content: space-between;
 }
+.contact-form-list {
+  list-style: none;
+  display: block;
+}
+.contact-form-item {
+  margin-bottom: 28px;
+  height: 50px;
+}
 .contact-form-input {
-  flex-basis: 456px;
+  width: 456px;
   height: 50px;
   font-size: 14px;
   font-weight: bold;
@@ -276,14 +287,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 456px;
+  justify-content: space-between;
 }
-.contact-form-input:last-child {
+.contact-form-item:last-child {
   margin-bottom: 0px;
 }
 .contact-form-input::placeholder {
   text-transform: uppercase;
   color: rgb(187, 187, 187);
   padding: 20px;
+}
+.contact-form-message:required:focus:valid,
+.contact-form-input:required:focus:valid {
+  border-color: green;
+  border-width: 2px;
+}
+.contact-form-message:required:focus:invalid,
+.contact-form-input:required:focus:invalid {
+  border-color: red;
+  border-width: 2px;
 }
 .contact-form-message {
   flex-basis: 456px;
@@ -300,9 +322,6 @@ body {
   color: rgb(187, 187, 187);
   padding: 20px;
 }
-.form-wrapper {
-  text-align: center;
-}
 .form-button {
   border-radius: 3px;
   background-color: rgb(254, 209, 54);
@@ -316,4 +335,5 @@ body {
   cursor: pointer;
   color: rgb(255, 255, 255);
   margin: 28px 0px 58px 0px;
+  display: inline-block;
 }
