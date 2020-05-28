@@ -278,10 +278,10 @@ body {
   font-size: 14px;
   font-weight: bold;
   border-style: solid;
-  border-width: 1px;
   border-color: rgb(204, 204, 204);
   border-radius: 2px;
   margin-bottom: 28px;
+  padding: 20px;
 }
 .input-wrapper {
   display: flex;
@@ -295,7 +295,6 @@ body {
 .contact-form-input::placeholder {
   text-transform: uppercase;
   color: rgb(187, 187, 187);
-  padding: 20px;
 }
 .contact-form-message:required:focus:valid,
 .contact-form-input:required:focus:valid {
@@ -308,19 +307,19 @@ body {
   border-width: 2px;
 }
 .contact-form-message {
-  flex-basis: 456px;
+  width: 456px;
   resize: none;
   border-style: solid;
-  border-width: 1px;
   border-color: rgb(204, 204, 204);
   border-radius: 2px;
+  padding: 18px;
+  height: 208px;
 }
 .contact-form-message::placeholder {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(187, 187, 187);
-  padding: 20px;
 }
 .form-button {
   border-radius: 3px;
